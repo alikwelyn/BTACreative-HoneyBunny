@@ -1,143 +1,52 @@
-<?php if ( is_home() && is_front_page() || is_front_page() ) { ?>
-<?php } ?>
-
-<?php if ( is_home() && !is_front_page() ) { ?>
   <footer>
     <div class="container">
       <div class="row d-flex align-items-center justify-content-center h-100">
-        <div class="col-md-6">
-          <img src="<?php bloginfo('template_url'); ?>/assets/imgs/logo.svg" width="220" alt="Frigga Sustentabilidade">
+        <div class="col-md-12">
+          <img src="<?php bloginfo('template_url'); ?>/assets/imgs/hb-purple.svg" width="220" alt="Frigga Sustentabilidade">
           <ul class="styled-icons icon-theme-colored list-inline">
-            <li><a href="https://www.facebook.com/frigga.eco" target="_blank"><i class="fa fa-facebook"></i></a></li>
-            <li><a href="http://instagram.com/frigga.eco/" target="_blank"><i class="fa fa-instagram"></i></a></li>
-            <li><a href="https://www.linkedin.com/company/28883024" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+            <li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#" target="_blank"><i class="fa fa-instagram"></i></a></li>
           </ul>
         </div>
-        <div class="col-md-6">
-          <a href="#VerTelefone" class="btn btn-block btn__white" id="VerTelefone" onclick="VerTelefone()">VER TELEFONE</a>
-          <a href="#VerEmail" class="btn btn-block btn__white" id="VerEmail" onclick="VerEmail()">VER EMAIL</a>
-          <div class="endereco">
-            <p>Rua Doutor Ricardo Vilela, 1406<br>2º andar - Mogi das Cruzes – SP</p>
+        <div class="col-md-12">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="uni">
+                <h3>unidade moema</h3>
+                <p>petshop, banho e tosa e consultório</p>
+                <p class="hor">segunda a sexta, das 9h às 18h sábado das 9h às 15h</p>
+                <a href="#VerTelefone" class="btn btn-block btn__purple" id="VerTelefone" onclick="VerTelefone()">ver telefone</a>
+                <p class="end">Alameda dos Tupiniquins, 232<br>São Paulo<br>CEP 06722-370</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="uni">
+                <h3>unidade moema</h3>
+                <p>petshop, banho e tosa e consultório</p>
+                <p class="hor">segunda a sexta, das 9h às 18h sábado das 9h às 15h</p>
+                <a href="#VerTelefone2" class="btn btn-block btn__purple" id="VerTelefone2" onclick="VerTelefone2()">ver telefone</a>
+                <p class="end">Alameda dos Tupiniquins, 232<br>São Paulo<br>CEP 06722-370</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="container-fluid">
-    <hr>
-      <div class="row">
-        <div class="col-md-3">
-          <?php
-              wp_nav_menu( array(
-                'menu'              => 'menu-footer-1',
-                'theme_location'    => 'menu-footer-1',
-                'depth'             => 1,
-                'container'         => 'ul',
-                'menu_class'        => 'm-footer',
-                'fallback_cb'       => 'wp_page_menu',
-              ) );
-            ?>
-        </div>
-        <div class="col-md-2">
-          <?php
-              wp_nav_menu( array(
-                'menu'              => 'menu-footer-2',
-                'theme_location'    => 'menu-footer-2',
-                'depth'             => 1,
-                'container'         => 'ul',
-                'menu_class'        => 'm-footer',
-                'fallback_cb'       => 'wp_page_menu',
-              ) );
-            ?>
-        </div>
-        <div class="col-md-3">
-          <?php
-              wp_nav_menu( array(
-                'menu'              => 'menu-footer-3',
-                'theme_location'    => 'menu-footer-3',
-                'depth'             => 1,
-                'container'         => 'ul',
-                'menu_class'        => 'm-footer',
-                'fallback_cb'       => 'wp_page_menu',
-              ) );
-            ?>
-        </div>
-        <div class="col-md-4">
-          <img src="<?php bloginfo('template_url'); ?>/assets/imgs/green-building.svg" width="75" alt="Green Building Coucil Brasil">
-          <img src="<?php bloginfo('template_url'); ?>/assets/imgs/crea-sp.svg" width="75" alt="Crea-SP">
-        </div>
-      </div>
-    </div>
-  </footer>
-<?php } ?>
- 
-<?php if ( is_blog() || is_category() || is_page() && !is_front_page() ) { ?>
-  <footer>
-    <div class="container">
-      <div class="row d-flex align-items-center justify-content-center h-100">
-        <div class="col-md-6" data-aos="fade-right" data-aos-once="false" data-aos-easing="ease-in-out" data-aos-offset="100" data-aos-delay="10" data-aos-duration="1000">
-          <img src="<?php bloginfo('template_url'); ?>/assets/imgs/logo.svg" width="220" alt="Frigga Sustentabilidade">
-          <ul class="styled-icons icon-theme-colored list-inline">
-            <li><a href="https://www.facebook.com/frigga.eco" target="_blank"><i class="fa fa-facebook"></i></a></li>
-            <li><a href="http://instagram.com/frigga.eco/" target="_blank"><i class="fa fa-instagram"></i></a></li>
-            <li><a href="https://www.linkedin.com/company/28883024" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-          </ul>
-        </div>
-        <div class="col-md-6" data-aos="fade-left" data-aos-once="false" data-aos-easing="ease-in-out" data-aos-offset="100" data-aos-delay="10" data-aos-duration="1000">
-          <a href="#VerTelefone" class="btn btn-block btn__white" id="VerTelefone" onclick="VerTelefone()">VER TELEFONE</a>
-          <a href="#VerEmail" class="btn btn-block btn__white" id="VerEmail" onclick="VerEmail()">VER EMAIL</a>
-          <div class="endereco">
-            <p>Rua Doutor Ricardo Vilela, 1406<br>2º andar - Mogi das Cruzes – SP</p>
+    <div class="footer-bottom">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xs-12 col-md-4 copy-client">
+            <img src="<?php bloginfo('template_url'); ?>/assets/imgs/logo.svg" alt="Logo Athos Medical" width="300">
+          </div>
+          <div class="col-xs-12 col-md-4">
+          </div>
+          <div class="col-xs-12 col-md-4 dev-bta">
+			  <span>Desenvolvido por </span><a href="https://btacreative.com.br/" alt=""><img src="<?php bloginfo('template_url'); ?>/assets/imgs/logo-bta-principal.svg" width="75" alt="BTA Creative"></a>
           </div>
         </div>
       </div>
     </div>
-    <div class="container-fluid">
-    <hr>
-      <div class="row" data-aos="zoom-in" data-aos-once="false" data-aos-easing="ease-in-out" data-aos-offset="100" data-aos-delay="10" data-aos-duration="1000">
-        <div class="col-md-3">
-          <?php
-              wp_nav_menu( array(
-                'menu'              => 'menu-footer-1',
-                'theme_location'    => 'menu-footer-1',
-                'depth'             => 1,
-                'container'         => 'ul',
-                'menu_class'        => 'm-footer',
-                'fallback_cb'       => 'wp_page_menu',
-              ) );
-            ?>
-        </div>
-        <div class="col-md-2">
-          <?php
-              wp_nav_menu( array(
-                'menu'              => 'menu-footer-2',
-                'theme_location'    => 'menu-footer-2',
-                'depth'             => 1,
-                'container'         => 'ul',
-                'menu_class'        => 'm-footer',
-                'fallback_cb'       => 'wp_page_menu',
-              ) );
-            ?>
-        </div>
-        <div class="col-md-3">
-          <?php
-              wp_nav_menu( array(
-                'menu'              => 'menu-footer-3',
-                'theme_location'    => 'menu-footer-3',
-                'depth'             => 1,
-                'container'         => 'ul',
-                'menu_class'        => 'm-footer',
-                'fallback_cb'       => 'wp_page_menu',
-              ) );
-            ?>
-        </div>
-        <div class="col-md-4">
-          <img src="<?php bloginfo('template_url'); ?>/assets/imgs/green-building.svg" width="75" alt="Green Building Coucil Brasil">
-          <img src="<?php bloginfo('template_url'); ?>/assets/imgs/crea-sp.svg" width="75" alt="Crea-SP">
-        </div>
-      </div>
-    </div>
   </footer>
-<?php } ?>
 
 <?php wp_footer(); ?>
 <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>

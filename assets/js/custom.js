@@ -16,8 +16,8 @@
             }
     }
     function VerTelefone(){
-        $("#VerTelefone").text('(11) 98817-4267');
+        $("#VerTelefone").text('(11) 0123-4567');
     }
-    function VerEmail(){
-        $("#VerEmail").text('contato@frigga.eco.br');
+    function VerTelefone2(){
+        $("#VerTelefone2").text('(11) 0123-4567');
     }

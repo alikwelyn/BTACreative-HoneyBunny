@@ -12,6 +12,7 @@ function btax1_title_tag() {
   add_theme_support( 'post-thumbnails' );
   add_image_size('index-thumb', 360, 230, true);
   add_image_size('post-thumb', 751, 400, true);
+  add_image_size('gallery-thumb', 255, 187, true);
 }
 
 add_action('after_setup_theme', 'btax1_title_tag');
