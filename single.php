@@ -4,10 +4,10 @@
       <div class="container-fluid">
         <div id="banner-indicators" class="carousel slide" data-ride="carousel">
           <div class="carousel-inner" role="listbox">
-                <div class="carousel-item-page active" style="background-image: url('<?php bloginfo('template_url'); ?>/assets/imgs/banner-comercial.png')">
-                  <div class="carousel-caption">          
+                <div class="carousel-item-page active">
+                  <div class="carousel-captionx">          
                     <h1><?php the_title(); ?></h1>
-                    <span><?php the_time('j \d\e F \d\e Y') ?></span>            
+                    <span><?php the_time('j \d\e F \d\e Y') ?></span>               
                   </div>
                 </div>
           </div>

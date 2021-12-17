@@ -6,27 +6,27 @@
           <div class="carousel-inner" role="listbox">
             <div class="carousel-item active" style="background-image: url('<?php bloginfo('template_url'); ?>/assets/imgs/banners/banner-topo-petshop.png')">
               <div class="carousel-caption">
-                <a href="#" class="btn btn__yellow">fale conosco</a>                 
+                <a href="#contato" class="btn btn__yellow">fale conosco</a>                 
               </div>
             </div>
             <div class="carousel-item " style="background-image: url('<?php bloginfo('template_url'); ?>/assets/imgs/banners/banner-topo-banho-tosa.png')">
               <div class="carousel-caption">
-                <a href="#" class="btn btn__yellow">fale conosco</a>                 
+                <a href="#contato" class="btn btn__yellow">fale conosco</a>                 
               </div>
             </div>
             <div class="carousel-item" style="background-image: url('<?php bloginfo('template_url'); ?>/assets/imgs/banners/banner-topo-consultorio.png')">
               <div class="carousel-caption">
-                <a href="#" class="btn btn__yellow">fale conosco</a>                 
+                <a href="#contato" class="btn btn__yellow">fale conosco</a>                 
               </div>
             </div>
             <div class="carousel-item" style="background-image: url('<?php bloginfo('template_url'); ?>/assets/imgs/banners/banner-topo-creche.png')">
               <div class="carousel-caption">
-                <a href="#" class="btn btn__yellow">fale conosco</a>                 
+                <a href="#contato" class="btn btn__yellow">fale conosco</a>                 
               </div>
             </div>
             <div class="carousel-item" style="background-image: url('<?php bloginfo('template_url'); ?>/assets/imgs/banners/banner-topo-hotel.png')">
               <div class="carousel-caption">
-                <a href="#" class="btn btn__yellow">fale conosco</a>                 
+                <a href="#contato" class="btn btn__yellow">fale conosco</a>                 
               </div>
             </div>
           </div>
@@ -124,10 +124,10 @@
     <div id="historia"> 
       <div class="container">
         <div class="row d-flex align-items-center justify-content-center h-100">
-          <div class="col-md-6 text-center">
+          <div class="col-md-6 order-2 order-sm-1  text-center">
             <img src="<?php bloginfo('template_url'); ?>/assets/imgs/img-historia.jpg" width="768">
           </div>
-          <div class="col-md-6">
+          <div class="col-md-6 order-1 order-sm-2">
             <h2>quem<br>somos</h2>
             <p>A Honey Bunny entende que o cão faz parte da vida de seu dono e por consequência, da sociedade, buscamos a harmonia na relação homem/animal, respeitando e conscientizando todos acerca das questões individuais, sociais e ambientais.<br><br>
 
@@ -143,17 +143,17 @@
       <div class="container">
         <div class="row d-flex align-items-center justify-content-center h-100">
 
-          <div class="col-md-6">
+          <div class="col-md-6 order-1 order-sm-1 order-md-1">
             <h2>galeria de fotos</h2>
           </div>
-          <div class="col-md-6">
+          <div class="col-md-6 order-3 order-sm-3 order-md-2">
             <h2>avisos</h2>
           </div>
 
-          <div class="col-md-6">
+          <div class="col-md-6 order-2 order-sm-2">
             <?php echo do_shortcode('[envira-gallery id="147"]'); ?>
           </div>
-          <div class="col-md-6">
+          <div class="col-md-6 order-4 order-sm-4">
             <div class="row">
               <div class="col-md-12">
                 <div class="notice">
@@ -168,8 +168,8 @@
             </div>
           </div>
 
-          <div class="col-md-12">
-            <a href="#" class="btn btn__yellow">fale conosco</a>   
+          <div class="col-md-12 order-5 order-sm-5">
+            <a href="#contato" class="btn btn__yellow">fale conosco</a>   
           </div>
 
         </div>
@@ -177,7 +177,7 @@
     </div>
 
     <div id="blog__hb"> 
-      <div class="container" data-aos="zoom-in" data-aos-once="false" data-aos-easing="ease-in-out" data-aos-offset="100" data-aos-delay="10" data-aos-duration="1000">
+      <div class="container">
         <div class="row">
           <div class="col-md-12">
             <h2>blog</h2>
@@ -194,14 +194,14 @@
                       <p class="blog-name"><?php echo get_author_name(); ?></p>
                       <a href="<?php the_permalink(); ?>"><h5 class="blog-title"><?php echo wp_trim_excerpt( get_the_title() ); ?></h5></a>
                       <?php the_excerpt(); ?>
-                      <a href="<?php the_permalink(); ?>" class="btn btn-block btn__purple__b">LER MATÉRIA COMPLETA</a>
+                      <a href="<?php the_permalink(); ?>" class="btn btn-block btn__purple__b">ler matéria completa</a>
                     </div>
                 </div>
               </div>
           <?php endwhile; wp_reset_postdata(); ?>
 
           <div class="col-md-12 text-center">
-            <a href="<?php the_permalink(); ?>" class="btn btn__yellow">ver matérias anteriores</a>
+            <a href="blog" class="btn btn__yellow">ver matérias anteriores</a>
           </div>
         </div>
 
@@ -210,7 +210,7 @@
 
     <div id="financiamento"> 
       <div class="container">
-        <div class="row d-flex align-items-center justify-content-center h-100" data-aos="fade-up" data-aos-once="false" data-aos-easing="ease-in-out" data-aos-offset="100" data-aos-delay="10" data-aos-duration="1000">
+        <div class="row d-flex align-items-center justify-content-center h-100">
             <div class="col-md-12">
               <h2>depoimentos</h2>
             </div>
@@ -221,7 +221,7 @@
     </div>
 
     <div id="contato"> 
-      <div class="container" data-aos="fade-up" data-aos-once="false" data-aos-easing="ease-in-out" data-aos-offset="100" data-aos-delay="10" data-aos-duration="1000">
+      <div class="container">
         <div class="row">
             <div class="col-md-12">
               <h2>fale conosco</h2>

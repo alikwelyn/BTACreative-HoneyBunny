@@ -32,14 +32,14 @@
     </div>-->
 
   <?php if ( is_home() && is_front_page() || is_front_page() ) { ?>
-    <div><a href="https://api.whatsapp.com/send/?phone=5511988174267&text=Olá...&app_absent=0" id="wa_button" target="_new">
+    <div><a href="https://api.whatsapp.com/send/?phone=5511012345678&text=Olá...&app_absent=0" id="wa_button" target="_new">
       <div class="circle-fill" style="transform-origin: center;"></div>
       <div class="img-circle" style="transform-origin: center;">
         <div class="img-circleblock" style="transform-origin: center;"></div>
       </div></a>
     </div>
     <nav class="navbar fixed-top navbar-expand-lg scrolling-navbar">
-      <div class="container-fluid">
+      <div class="container">
         <a class="navbar-brand" href="<?php echo get_home_url(); ?>">
           <img src="<?php bloginfo('template_url'); ?>/assets/imgs/logo.svg" width="200" alt="Frigga Sustentabilidade">
         </a>
@@ -72,17 +72,17 @@
       </div>
     </nav>
   <?php } ?>
-  <?php if ( is_home() && !is_front_page() ) { ?>
-    <div><a href="https://api.whatsapp.com/send/?phone=5511988174267&text=Olá...&app_absent=0" id="wa_button" target="_new">
+  <?php if ( is_blog() || is_category() || is_search() || is_page() && !is_front_page() ) { ?>
+    <div><a href="https://api.whatsapp.com/send/?phone=5511012345678&text=Olá...&app_absent=0" id="wa_button" target="_new">
       <div class="circle-fill" style="transform-origin: center;"></div>
       <div class="img-circle" style="transform-origin: center;">
         <div class="img-circleblock" style="transform-origin: center;"></div>
       </div></a>
     </div>
     <nav class="navbar fixed-top navbar-expand-lg scrolling-navbar">
-      <div class="container-fluid">
+      <div class="container">
         <a class="navbar-brand" href="<?php echo get_home_url(); ?>">
-          <img src="<?php bloginfo('template_url'); ?>/assets/imgs/logo.svg" width="120" alt="Frigga Sustentabilidade">
+          <img src="<?php bloginfo('template_url'); ?>/assets/imgs/logo.svg" width="200" alt="Frigga Sustentabilidade">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
           aria-expanded="false" aria-label="Toggle navigation">
@@ -91,16 +91,6 @@
           <span class="icon-bar"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <?php
-                wp_nav_menu( array(
-                    'menu'              => 'menu-produtos',
-                    'theme_location'    => 'menu-produtos',
-                    'depth'             => 2,
-                    'container'         => 'ul',
-                    'menu_class'        => 'navbar-nav',
-                    'fallback_cb'       => 'wp_page_menu',
-                ) );
-              ?>
               <?php
                 wp_nav_menu( array(
                     'menu'              => 'menu-principal',
@@ -112,123 +102,11 @@
                 ) );
               ?>
           <div class="social-part">
-            <a href="https://www.facebook.com/frigga.eco" target="_blank">
+            <a href="#" target="_blank">
               <i class="fa fa-facebook" aria-hidden="true"></i>
             </a>
-            <a href="http://instagram.com/frigga.eco/" target="_blank">
+            <a href="#" target="_blank">
               <i class="fa fa-instagram" aria-hidden="true"></i>
-            </a>
-            <a href="https://www.linkedin.com/company/28883024" target="_blank">
-              <i class="fa fa-linkedin" aria-hidden="true"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-    </nav>
-  <?php } ?>
-  <?php if ( is_page() && !is_front_page() ) { ?>
-    <div><a href="https://api.whatsapp.com/send/?phone=55110123456789&text=Olá...&app_absent=0" id="wa_button" target="_new">
-      <div class="circle-fill" style="transform-origin: center;"></div>
-      <div class="img-circle" style="transform-origin: center;">
-        <div class="img-circleblock" style="transform-origin: center;"></div>
-      </div></a>
-    </div>
-    <nav class="navbar fixed-top navbar-expand-lg scrolling-navbar">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="<?php echo get_home_url(); ?>">
-          <img src="<?php bloginfo('template_url'); ?>/assets/imgs/logo.svg" width="120" alt="Frigga Sustentabilidade">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-          aria-expanded="false" aria-label="Toggle navigation">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <?php
-                wp_nav_menu( array(
-                    'menu'              => 'menu-produtos',
-                    'theme_location'    => 'menu-produtos',
-                    'depth'             => 2,
-                    'container'         => 'ul',
-                    'menu_class'        => 'navbar-nav',
-                    'fallback_cb'       => 'wp_page_menu',
-                ) );
-              ?>
-              <?php
-                wp_nav_menu( array(
-                    'menu'              => 'menu-principal',
-                    'theme_location'    => 'menu-principal',
-                    'depth'             => 2,
-                    'container'         => 'ul',
-                    'menu_class'        => 'navbar-nav ml-auto',
-                    'fallback_cb'       => 'wp_page_menu',
-                ) );
-              ?>
-          <div class="social-part">
-            <a href="https://www.facebook.com/frigga.eco" target="_blank">
-              <i class="fa fa-facebook" aria-hidden="true"></i>
-            </a>
-            <a href="http://instagram.com/frigga.eco/" target="_blank">
-              <i class="fa fa-instagram" aria-hidden="true"></i>
-            </a>
-            <a href="https://www.linkedin.com/company/28883024" target="_blank">
-              <i class="fa fa-linkedin" aria-hidden="true"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-    </nav>
-  <?php } ?>
-
-  <?php if ( is_blog() || is_category() || is_search() && !is_front_page() ) { ?>
-    <div><a href="https://api.whatsapp.com/send/?phone=55110123456789&text=Olá...&app_absent=0" id="wa_button" target="_new">
-      <div class="circle-fill" style="transform-origin: center;"></div>
-      <div class="img-circle" style="transform-origin: center;">
-        <div class="img-circleblock" style="transform-origin: center;"></div>
-      </div></a>
-    </div>
-    <nav class="navbar fixed-top navbar-expand-lg scrolling-navbar">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="<?php echo get_home_url(); ?>">
-          <img src="<?php bloginfo('template_url'); ?>/assets/imgs/logo.svg" width="120" alt="Frigga Sustentabilidade">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-          aria-expanded="false" aria-label="Toggle navigation">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <?php
-                wp_nav_menu( array(
-                    'menu'              => 'menu-produtos',
-                    'theme_location'    => 'menu-produtos',
-                    'depth'             => 2,
-                    'container'         => 'ul',
-                    'menu_class'        => 'navbar-nav',
-                    'fallback_cb'       => 'wp_page_menu',
-                ) );
-              ?>
-              <?php
-                wp_nav_menu( array(
-                    'menu'              => 'menu-paginas',
-                    'theme_location'    => 'menu-paginas',
-                    'depth'             => 2,
-                    'container'         => 'ul',
-                    'menu_class'        => 'navbar-nav ml-auto',
-                    'fallback_cb'       => 'wp_page_menu',
-                ) );
-              ?>
-          <div class="social-part">
-            <a href="https://www.facebook.com/frigga.eco" target="_blank">
-              <i class="fa fa-facebook" aria-hidden="true"></i>
-            </a>
-            <a href="http://instagram.com/frigga.eco/" target="_blank">
-              <i class="fa fa-instagram" aria-hidden="true"></i>
-            </a>
-            <a href="https://www.linkedin.com/company/28883024" target="_blank">
-              <i class="fa fa-linkedin" aria-hidden="true"></i>
             </a>
           </div>
         </div>
