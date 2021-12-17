@@ -20,8 +20,8 @@
 
   <body>
 
-    <!--<div class="frigga-preloader">
-      <img class="preloader-logo" src="<?php bloginfo('template_url'); ?>/assets/imgs/logo.svg" width="200">
+    <div class="hb-preloader">
+      <img class="preloader-logo" src="<?php bloginfo('template_url'); ?>/assets/imgs/logo.svg" width="350" alt="Honey Bunny - Petshop">
       <div class="preloader-preview-area">
           <div class="ball-pulse">
               <div></div>
@@ -29,10 +29,10 @@
               <div></div>
           </div>
       </div>
-    </div>-->
+    </div>
 
   <?php if ( is_home() && is_front_page() || is_front_page() ) { ?>
-    <div><a href="https://api.whatsapp.com/send/?phone=5511012345678&text=Olá...&app_absent=0" id="wa_button" target="_new">
+    <div><a href="https://api.whatsapp.com/send/?phone=5511<?php echo of_get_option( 'whatsapp' ); ?>&text=Olá, vim pelo site de vocês e gostaria de saber mais...&app_absent=0" id="wa_button" target="_new">
       <div class="circle-fill" style="transform-origin: center;"></div>
       <div class="img-circle" style="transform-origin: center;">
         <div class="img-circleblock" style="transform-origin: center;"></div>
@@ -41,7 +41,7 @@
     <nav class="navbar fixed-top navbar-expand-lg scrolling-navbar">
       <div class="container">
         <a class="navbar-brand" href="<?php echo get_home_url(); ?>">
-          <img src="<?php bloginfo('template_url'); ?>/assets/imgs/logo.svg" width="200" alt="Frigga Sustentabilidade">
+          <img src="<?php bloginfo('template_url'); ?>/assets/imgs/logo.svg" width="200" alt="Honey Bunny - Petshop">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
           aria-expanded="false" aria-label="Toggle navigation">
@@ -61,10 +61,10 @@
                 ) );
               ?>
           <div class="social-part">
-            <a href="#" target="_blank">
+            <a href="<?php echo of_get_option( 'link_facebook' ); ?>" target="_blank">
               <i class="fa fa-facebook" aria-hidden="true"></i>
             </a>
-            <a href="#" target="_blank">
+            <a href="<?php echo of_get_option( 'link_instagram' ); ?>" target="_blank">
               <i class="fa fa-instagram" aria-hidden="true"></i>
             </a>
           </div>
@@ -73,7 +73,7 @@
     </nav>
   <?php } ?>
   <?php if ( is_blog() || is_category() || is_search() || is_page() && !is_front_page() ) { ?>
-    <div><a href="https://api.whatsapp.com/send/?phone=5511012345678&text=Olá...&app_absent=0" id="wa_button" target="_new">
+    <div><a href="https://api.whatsapp.com/send/?phone=55<?php echo of_get_option( 'whatsapp' ); ?>&text=Olá, vim pelo site de vocês e gostaria de saber mais...&app_absent=0" id="wa_button" target="_new">
       <div class="circle-fill" style="transform-origin: center;"></div>
       <div class="img-circle" style="transform-origin: center;">
         <div class="img-circleblock" style="transform-origin: center;"></div>
@@ -102,10 +102,10 @@
                 ) );
               ?>
           <div class="social-part">
-            <a href="#" target="_blank">
+            <a href="<?php echo of_get_option( 'link_facebook' ); ?>" target="_blank">
               <i class="fa fa-facebook" aria-hidden="true"></i>
             </a>
-            <a href="#" target="_blank">
+            <a href="<?php echo of_get_option( 'link_instagram' ); ?>" target="_blank">
               <i class="fa fa-instagram" aria-hidden="true"></i>
             </a>
           </div>

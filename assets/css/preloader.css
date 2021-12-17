@@ -1,4 +1,4 @@
-.frigga-preloader {
+.hb-preloader {
     top: 0;
     left: 0;
     z-index: 99999;
@@ -6,7 +6,7 @@
     height: 100%;
     width: 100%;
     text-align: center;
-    background: #EF7D40;
+    background: #713B86;
 }
 .preloader-logo,
 .preloader-preview-area {

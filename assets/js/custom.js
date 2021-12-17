@@ -1,7 +1,7 @@
     $(document).ready(function() {
         setTimeout(function(){
             $("body").addClass("loaded");
-            $('.frigga-preloader').fadeOut();
+            $('.hb-preloader').fadeOut();
         }, 2000);
     });
     function searchToggle(obj, evt){
@@ -14,10 +14,4 @@
                 container.removeClass('active');
                 container.find('.search-input').val('');
             }
-    }
-    function VerTelefone(){
-        $("#VerTelefone").text('(11) 0123-4567');
-    }
-    function VerTelefone2(){
-        $("#VerTelefone2").text('(11) 0123-4567');
     }

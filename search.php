@@ -4,15 +4,16 @@
       <div class="container-fluid">
         <div id="banner-indicators" class="carousel slide" data-ride="carousel">
           <div class="carousel-inner" role="listbox">
-                <div class="carousel-item-page active" style="background-image: url('<?php bloginfo('template_url'); ?>/assets/imgs/banner-comercial.png')">
-                  <div class="carousel-caption">          
-                  <h2><?php echo $wp_query->found_posts; ?> <?php _e( 'Resultados da pesquisa<br>encontrados para', 'locale' ); ?>: "<strong><?php the_search_query(); ?></strong>"</h2>          
+                <div class="carousel-item-page active">
+                  <div class="carousel-captionx">          
+                    <h3><?php echo $wp_query->found_posts; ?> <?php _e( 'Resultados da pesquisa<br>encontrados para', 'locale' ); ?>: "<strong><?php the_search_query(); ?></strong>"</h3>                 
                   </div>
                 </div>
           </div>
         </div>
       </div>
     </section>
+
 
 
     <section id="search">

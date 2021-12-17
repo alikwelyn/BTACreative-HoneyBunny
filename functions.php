@@ -13,6 +13,7 @@ function btax1_title_tag() {
   add_image_size('index-thumb', 360, 230, true);
   add_image_size('post-thumb', 751, 400, true);
   add_image_size('gallery-thumb', 255, 187, true);
+  add_image_size('testimonial-thumb', 150, 150, true);
 }
 
 add_action('after_setup_theme', 'btax1_title_tag');
@@ -280,4 +281,49 @@ function filter_ptags_on_images($content){
 
 add_filter('the_content', 'filter_ptags_on_images');
 
+add_action('optionsframework_after','exampletheme_options_after', 100);
+function exampletheme_options_after() { ?>
+<?php }
+
+/*
+ * Loads the Options Panel
+ *
+ * If you're loading from a child theme use stylesheet_directory
+ * instead of template_directory
+ */
+
+define( 'OPTIONS_FRAMEWORK_DIRECTORY', get_template_directory_uri() . '/inc/' );
+require_once dirname( __FILE__ ) . '/inc/options-framework.php';
+
+// Loads options.php from child or parent theme
+$optionsfile = locate_template( 'options.php' );
+load_template( $optionsfile );
+
+/*
+ * This is an example of how to add custom scripts to the options panel.
+ * This one shows/hides the an option when a checkbox is clicked.
+ *
+ * You can delete it if you not using that option
+ */
+add_action( 'optionsframework_custom_scripts', 'optionsframework_custom_scripts' );
+
+function optionsframework_custom_scripts() { ?>
+
+<script type="text/javascript">
+jQuery(document).ready(function() {
+
+	jQuery('#mostrar_video_institucional').click(function() {
+  		jQuery('#section-link_youtube').fadeToggle(400);
+	});
+
+	if (jQuery('#mostrar_video_institucional:checked').val() !== undefined) {
+		jQuery('#section-link_youtube').show();
+  }
+
+
+});
+</script>
+
+<?php
+}
 ?>

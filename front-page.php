@@ -59,10 +59,10 @@
                 <div class="card-body">
                   <img class="card-img mx-auto d-block" src="<?php bloginfo('template_url'); ?>/assets/imgs/creche-icon.svg" width="100" height="100">
                   <h4 class="card-title">creche</h4>
-                  <p class="card-text">Em um espaço de 300m2, os cães ficam livres para brincar, correr e socializar entre eles. Em nossa programação diária, os cães se divertem, aprendem, se alimentam e descansam.</p>
+                  <p class="card-text"><?php echo of_get_option( 'texto_creche' ); ?></p>
                 </div>
                 <div class="card-footer">
-                  <a href="#" class="btn btn-block btn__yellow">saiba mais</a>   
+                  <a href="<?php echo of_get_option( 'link_creche' ); ?>" class="btn btn-block btn__yellow">saiba mais</a>   
                 </div>
               </div>
             </div>
@@ -75,10 +75,10 @@
                 <div class="card-body">
                   <img class="card-img mx-auto d-block" src="<?php bloginfo('template_url'); ?>/assets/imgs/hotel-icon.svg" width="100" height="100">
                   <h4 class="card-title">hotel</h4>
-                  <p class="card-text">Na hospedagem os cães aproveitam as atividades diárias e descansam com mais freqüência para evitar exaustão e fadiga, por isso a rotina do hotel é diferente da creche.</p>
+                  <p class="card-text"><?php echo of_get_option( 'texto_hotel' ); ?></p>
                 </div>
                 <div class="card-footer">
-                  <a href="#" class="btn btn-block btn__yellow">saiba mais</a>   
+                  <a href="<?php echo of_get_option( 'link_hotel' ); ?>" class="btn btn-block btn__yellow">saiba mais</a>   
                 </div>
               </div>
             </div>
@@ -91,10 +91,10 @@
                 <div class="card-body">
                   <img class="card-img mx-auto d-block" src="<?php bloginfo('template_url'); ?>/assets/imgs/bet-icon.svg" width="100" height="100">
                   <h4 class="card-title">banho e tosa</h4>
-                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  <p class="card-text"><?php echo of_get_option( 'texto_bet' ); ?></p>
                 </div>
                 <div class="card-footer">
-                  <a href="#" class="btn btn-block btn__yellow">saiba mais</a>   
+                  <a href="<?php echo of_get_option( 'link_bet' ); ?>" class="btn btn-block btn__yellow">saiba mais</a>   
                 </div>
               </div>
             </div>
@@ -107,10 +107,10 @@
                 <div class="card-body">
                   <img class="card-img mx-auto d-block" src="<?php bloginfo('template_url'); ?>/assets/imgs/consultorio-icon.svg" width="100" height="100">
                   <h4 class="card-title">consultório</h4>
-                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  <p class="card-text"><?php echo of_get_option( 'texto_consultorio' ); ?></p>
                 </div>
                 <div class="card-footer">
-                  <a href="#" class="btn btn-block btn__yellow mt-auto">saiba mais</a>   
+                  <a href="<?php echo of_get_option( 'link_consultorio' ); ?>" class="btn btn-block btn__yellow mt-auto">saiba mais</a>   
                 </div>
               </div>
             </div>
@@ -129,11 +129,7 @@
           </div>
           <div class="col-md-6 order-1 order-sm-2">
             <h2>quem<br>somos</h2>
-            <p>A Honey Bunny entende que o cão faz parte da vida de seu dono e por consequência, da sociedade, buscamos a harmonia na relação homem/animal, respeitando e conscientizando todos acerca das questões individuais, sociais e ambientais.<br><br>
-
-            Nossa missão é tornar harmoniosa e saudável a relação entre homens e cães através de atividade física, disciplina e acompanhamento especializado.<br><br>
-
-            Com perspectiva de ser referência no segmento de cuidados para cães, tornando-se uma empresa admirada pela responsabilidade, criatividade, respeito e pela maneira como conduz suas relações com clientes, cães, funcionários e a sociedade.</p>
+            <p><?php echo of_get_option( 'texto_qs' ); ?></p>
           </div>
         </div>
       </div>
@@ -157,12 +153,12 @@
             <div class="row">
               <div class="col-md-12">
                 <div class="notice">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  <p><?php echo of_get_option( 'texto_av1' ); ?></p>
                 </div>
               </div>
               <div class="col-md-12">
                 <div class="notice">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  <p><?php echo of_get_option( 'texto_av2' ); ?></p>
                 </div>
               </div>
             </div>
@@ -215,6 +211,7 @@
               <h2>depoimentos</h2>
             </div>
             <div class="col-md-12">
+              <?php echo do_shortcode( '[rt-testimonial id="157" title="Depoimentos"]' ) ?>
             </div>
         </div>
       </div>

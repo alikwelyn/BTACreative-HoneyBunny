@@ -3,6 +3,10 @@
 @media (min-width: 1025px) and (max-width: 1280px) {
 }
 @media (min-width: 768px) and (max-width: 1024px) {
+.carousel-captionx{
+  transform: translateY(230%);
+  text-align: center;
+}
 .carousel-captionx h1{
   font-size: 45px;
 }
@@ -27,10 +31,18 @@
 #historia img{
   width: 650px;
 }
+.overlay{
+  border: 0;
+  position:absolute;
+  right: 25%;
+  top: 0%;
+  width: 150px;
+  height: 150px;
+}
 }
 @media (min-width: 320px) and (max-width: 480px) {
 .navbar{
-  background: transparent;
+  background: #713B86;
 }
 .navbar .social-part{
   display: none;
@@ -100,10 +112,10 @@ footer .col-md-4 {
 footer img {
   margin: 10px;
 }
-.carousel-slider.arrows-outside .owl-nav .owl-prev {
-    left: -6.5px !important;
+.tss-wrapper span.rt-slick-nav.rt-prev {
+  left: 8px;
 }
-.carousel-slider.arrows-outside .owl-nav .owl-next {
-    right: -6.5px !important;
+.tss-wrapper span.rt-slick-nav.rt-next {
+  right: 0px;
 }
 }
